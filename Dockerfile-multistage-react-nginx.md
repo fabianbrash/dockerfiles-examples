@@ -4,7 +4,7 @@
 # build environment
 FROM node:13.12.0-alpine as build
 WORKDIR /app
-# Do we need the below? are are doing a production build and this is a build container
+# Do we need the below? we are doing a production build and this is a build container
 ENV PATH /app/node_modules/.bin:$PATH
 
 COPY package.json ./
