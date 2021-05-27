@@ -1,4 +1,5 @@
 
+````
 FROM node:14.15.1-alpine3.12 as build
 WORKDIR /usr/src/app
 COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
@@ -15,3 +16,4 @@ WORKDIR /opt/app
 USER 1000
 EXPOSE 5000
 CMD ["serve", "-s"]
+````
