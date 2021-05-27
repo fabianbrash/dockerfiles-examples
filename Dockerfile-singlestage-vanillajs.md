@@ -1,4 +1,4 @@
-### Note this assumes all your .js,.css,.html are in the cwd
+### Note this assumes all your .js,.css,.html are in the cwd again a .dockerignore is super important so you don't bring in anything you don't need
 
 ````
 FROM node:13.12.0-alpine
