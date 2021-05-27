@@ -3,7 +3,6 @@
 ````
 # build environment
 FROM node:13.12.0-alpine as build
-LABEL maintainer="Fabian Brash"
 WORKDIR /app
 # Do we need the below? are are doing a production build and this is a build container
 ENV PATH /app/node_modules/.bin:$PATH
@@ -21,6 +20,7 @@ RUN npm run build
 
 # production environment
 FROM nginx:stable-alpine
+LABEL maintainer="Fabian Brash"
 COPY --from=build /app/build /usr/share/nginx/html
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
