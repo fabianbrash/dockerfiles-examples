@@ -22,6 +22,6 @@ RUN npm run build
 FROM nginxinc/nginx-unprivileged:1.20.1-alpine
 LABEL maintainer="Fabian Brash"
 COPY --from=build /app/build /usr/share/nginx/html
-USER 1000
+
 
 ````
