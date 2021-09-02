@@ -1,3 +1,6 @@
+## Now a multistage build where we use a custom node-windows as build and then MS iis as Prod stage
+
+````
 ARG iiscore=mcr.microsoft.com/windows/servercore/iis:windowsservercore-ltsc2019
 ARG nodecore=local/srv2019-node:16.8.0
 FROM $nodecore as build
@@ -25,3 +28,4 @@ RUN powershell -NoProfile -Command Remove-Item -Recurse C:\inetpub\wwwroot\*
 WORKDIR /inetpub/wwwroot
 
 COPY --from=build /build/dist/ .
+````
