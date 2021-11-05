@@ -33,4 +33,9 @@ USER appuser
 # During debugging, this entry point will be overridden. For more information, please refer to https://aka.ms/vscode-docker-python-debug
 CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
 
+# Docs say you can do this if TLS is being terminated by a proxy, i.e. nginx, traefik
+
+#CMD ["uvicorn", "app:app", "--proxy-headers", "--host", "0.0.0.0", "--port", "80"]
+
+
 ````
