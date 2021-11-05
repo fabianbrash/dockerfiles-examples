@@ -2,7 +2,9 @@
 
 #### If you created a .dockerignore remove the line that omits .env files as we need that to connect to our DB
 
-#### I really like that this runs as non-root this file is the base file that comes from vscode, with some mods as course
+#### I really like that this runs as non-root this file is the base file that comes from vscode, with some mods ofcourse
+
+#### Also I have tested this and it does work, not just an untested brain dump
 
 ##
 
