@@ -4,6 +4,10 @@
 
 #### I really like that this runs as non-root this file is the base file that comes from vscode
 
+##
+
+[fastAPI docker docs](https://fastapi.tiangolo.com/deployment/docker/)
+
 
 ````
 # For more information, please refer to https://aka.ms/vscode-docker-python
