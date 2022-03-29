@@ -1,0 +1,15 @@
+FROM ubuntu:20.04
+
+LABEL maintainer="Fabian Brash"
+
+RUN apt-get update && apt-get upgrade -y && DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends --no-install-suggests -y \
+curl \
+ca-certificates \
+dnsutils \
+git \
+hping3 \
+iputils-ping \
+net-tools \
+nmap \
+wget \
+vim
